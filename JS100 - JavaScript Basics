@@ -1,3 +1,13 @@
+Reading Documentation 1
+
 1. What is an excellent destination when looking for JavaScript documentation?
 
 The JavaScript pages on MDN are a valuable resource that you should reference frequently as you learn JavaScript. They provide both tutorials and a reference of JavaScript's built-in objects and their properties and methods, operators, and more. You can also find information about browser compatibility and specifications.
+
+2. Find out whether JavaScript has a method to lowercase a string, for example converting 'Aloha, World!' into 'aloha, world!.
+
+'Aloha, World!'.toLowerCase(); // 'aloha, world!'
+
+3. Is there a method to capitalize a string, for example turning 'mountain' into 'Mountain'?
+
+There is no built-in method for capitalizing a string. If we wanted to have such a method, we would have to implement it ourselves.
