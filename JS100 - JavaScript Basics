@@ -11,3 +11,76 @@ The JavaScript pages on MDN are a valuable resource that you should reference fr
 3. Is there a method to capitalize a string, for example turning 'mountain' into 'Mountain'?
 
 There is no built-in method for capitalizing a string. If we wanted to have such a method, we would have to implement it ourselves.
+
+4. Locate the documentation for the Array built-in object on MDN.
+
+How can we access the element 'and' in the array ['fish', 'and', 'chips']?
+
+['fish', 'and', 'chips'][1];
+
+5. What happens if we take the array ['fish', 'and', 'chips'] and try to access the element at index position 10? Try this in your JavaScript console.
+
+Attempting to access an element at an index that is out of the bounds of the array will return undefined.
+
+6. What are the return values of the statements on lines 3 to 5? Refer to the MDN documentation about the Array object for help.
+
+let trees = ['birch', 'pine', 'sequoia', 'palm tree'];
+
+trees[trees.length - 1];
+trees.pop();
+trees[trees.length - 1];
+
+let trees = ['birch', 'pine', 'sequoia', 'palm tree'];
+
+trees[trees.length - 1]; // 'palm tree'
+trees.pop();              // 'palm tree'
+trees[trees.length - 1]; // 'sequoia'
+
+7. Look up the MDN documentation for the typeof operator. What is its return value? Determine what the following statements will return:
+
+typeof 23.5;
+typeof 'Call me Ishmael.';
+typeof false;
+typeof 0;
+typeof null;
+typeof undefined;
+
+typeof 23.5;               // 'number'
+typeof 'Call me Ishmael.'; // 'string'
+typeof false;              // 'boolean'
+typeof 0;                  // 'number'
+typeof null;               // 'object'
+typeof undefined;          // 'undefined'
+
+8. What will the following statements return?
+
+typeof tweet;
+typeof words;
+typeof isValid;
+
+typeof tweet;   // 'string'
+typeof words;   // 'object'
+typeof isValid; // 'boolean'
+
+9. What will the following statements evaluate to?
+
+tweet.split(' ');
+tweet.split(' ').reverse();
+tweet.split(' ').reverse().join(' ');
+
+tweet.split(' ');
+// ["Starting", "to", "get", "the", "hang", "of", "it...", "#javascript", "#launchschool"]
+
+tweet.split(' ').reverse();
+// ["#launchschool", "#javascript", "it...", "of", "hang", "the", "get", "to", "Starting"]
+
+tweet.split(' ').reverse().join(' ');
+// '#launchschool #javascript it... of hang the get to Starting'
+
+10. In your JavaScript console, execute the following two lines of code to check whether their return values differ and if so, how. Take a look at the MDN documentation on equality comparisons to read about how == and === differ.
+
+'8' == 8;
+'8' === 8;
+
+'8' == 8;  // true
+'8' === 8; // false
