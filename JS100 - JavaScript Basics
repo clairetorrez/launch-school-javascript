@@ -167,3 +167,19 @@ SyntaxError: Unexpected token &&
 10. TypeError: tweet.length is not a function
 
 The syntax section of the MDN page on length demonstrates that length is called without parentheses. This is because it is a string property, not a string method.
+
+Loops
+
+1. Add some code inside of the for loop below that logs the current value of i to the console on each iteration. Before you run the code: What sequence of numbers do you expect to be logged?
+
+let i;
+
+for (i = 0; i <= 10; i += 2) {
+  // include your code here
+}
+
+let i;
+
+for (i = 0; i <= 10; i += 2) {
+  console.log(i);
+}
