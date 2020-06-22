@@ -229,3 +229,59 @@ while (index < array.length) {
   console.log(array[index]);
   index += 1;
 }
+
+6. Take a moment to read the MDN documentation on the continue statement.
+
+Then write a for loop that loops over the elements of the array cities and logs the length of each string to the console. If the element is null, skip forward to the next iteration without logging anything to the console.
+
+let cities = ['Istanbul', 'Los Angeles', 'Tokyo', null, 'Vienna', null, 'London', 'Beijing', null];
+let i;
+
+for (i = 0; i < cities.length; i += 1) {
+  if (cities[i] === null) {
+    continue;
+  }
+
+  console.log(cities[i].length);
+}
+
+7. The following code keeps looping forever. (You can hit Ctrl-C to stop it.) Why is that? Also modify it so that it stops after the first iteration.
+
+let i;
+
+for (i = 0; ; i += 1) {
+  console.log("and on");
+}
+
+The above code never terminates, because the condition of the for loop was left empty. In this case, JavaScript treats it as true.
+
+One way to terminate the loop from within the body is to use the break statement:
+
+let i;
+
+for (i = 0; ; i += 1) {
+  console.log("and on");
+  break;
+}
+
+8. Write a while loop that logs all odd natural numbers between 1 and 40.
+
+let num = 1;
+
+while (num < 40 {
+  console.log(num);
+    num +=2;
+}
+
+9. Loop over the elements of the array fish, logging each one. Terminate the loop immediately after logging the string 'Nemo'.
+
+let fish = ['Dory', 'Marlin', 'Gill', 'Nemo', 'Bruce'];
+let i;
+
+for (i = 0; i < fish.length; i =+ 1) {
+    console.log(fish[i]; 
+    
+    if (fish[i] === 'Nemo') {
+    break;
+    }
+ }
