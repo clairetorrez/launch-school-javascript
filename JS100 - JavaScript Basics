@@ -291,3 +291,22 @@ for (i = 0; i < fish.length; i =+ 1) {
  Both statements execute the given block as long as the condition evaluates to true. The difference is that the condition in a while statement is checked before executing the block, while the condition in a do...while statement is checked after the block has been executed. So the block in a do...while statement will always be executed at least once, even if the condition is not satisfied.
 
 Therefore the second code snippet logs 'Woooot!' once, while the first code snippet does not log anything.
+
+Conditionals
+
+1. Without looking at your notes or MDN, try to recall all values that count as falsy in JavaScript.
+
+In JavaScript, there are only six values that are falsy. They are:
+
+false
+null
+undefined
+0
+NaN
+'' or ""
+
+2. The code provided below will randomly initialize randomNumber to either 0 or 1 each time it is executed.
+
+Write an if statement that logs 'Yes!' if randomNumber is 1, and 'No.' if randomNumber is 0.
+
+let randomNumber = Math.round(Math.random());
