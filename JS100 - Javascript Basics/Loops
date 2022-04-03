@@ -1,0 +1,24 @@
+Loop and Log
+
+1. Add some code inside of the for loop below that logs the current value of i to the console on each iteration. Before you run the code: What sequence of numbers do you expect to be logged?
+
+for (let i = 0; i <= 10; i += 2) {
+  console.log(i);
+}
+
+This code logs:
+0
+2
+4
+6
+8
+10
+
+Countdown
+
+2. The code below logs the numbers from 1 to 10. Change it, so that it instead logs the numbers from 10 to 1 in decreasing order, and then logs 'Launch!'.
+
+for (let i = 10; i > 0; i -= 1) {
+  console.log(i);
+}
+console.log('Launch!');
