@@ -1,0 +1,82 @@
+Reading Documentation 2
+
+1. In the following code snippet, find all violations of the style guide. Rewrite it so that it conforms with the guide.
+
+let ice_cream_taste = 'chocolate'
+let ice_cream_density = 10
+
+while(ice_cream_density > 0)
+{
+    console.log('Drip...');
+    ice_cream_density -= 1;
+}
+
+console.log('The '+ ice_cream_taste +' ice cream melted.');
+
+let iceCreamTaste = 'chocolate';
+let iceCreamDensity = 10;
+
+while (iceCreamDensity > 0) {
+  console.log('Drip...');
+  iceCreamDensity -= 1;
+}
+
+console.log('The ' + iceCreamTaste + ' ice cream melted.');
+
+Use camelCase for variable names.
+End all statements with a semicolon.
+Indent lines with two spaces.
+Use spaces between keywords (like while) and opening parentheses, as well as between closing parentheses and opening curly brackets.
+Put the opening curly brackets of the while block on the same line as the while statement.
+Put spaces before and after operators like +.
+
+2. Without looking into your notes, try to remember which primitive data types are defined in JavaScript. Then find this information on MDN.
+
+There are six primitive data types:
+
+Number
+Boolean
+String
+Symbol
+Null
+Undefined
+
+3. Using the documentation, determine how we can find the largest numeric value that can be represented in JavaScript. Write a line of code that returns this value.
+
+Number.MAX_VALUE; // 1.7976931348623157e+308
+
+4. Find the MDN documentation on operator precedence, and use it to find out which result the expression 4 * 5 + 3 ** 2 / 10 evaluates to.
+
+20.9
+
+5. Find out what Date.now() returns.
+
+console.log(Date.now()); // 1536562500455
+
+6. let today = new Date();
+
+today.getYear();
+today.getFullYear();
+What is the difference between the two methods and which one should you use?
+
+Date.prototype.getYear() returns a number representing the year of the date on which it is invoked, minus 1900. For example, if the date is sometime in 2019, getYear() will return 119.
+
+Date.prototype.getFullYear() returns a number representing the year of the date on which it is invoked. For example, if the date is sometime in 2019, getFullYear() will return 2019.
+
+As the documentation notes, getYear() is deprecated and you should avoid using it. It is being replaced with getFullYear(), which returns a four-digit number representing the year, as expected.
+
+7. How many arguments does the Array.prototype.join() method expect? What happens if you call it with less or more arguments?
+
+The array method join() concatenates all elements of an array into a string. It expects a single, optional argument: a string that will be used as separator. If the argument is omitted, the separator defaults to ','. Any excess arguments passed to the method upon invocation are ignored.
+
+8. Find out how we can join two or more strings together.
+
+Both the String.prototype.concat() method and the + operator concatenate two or more strings, returning a new string.
+
+9. The below code raises a SyntaxError. If you run the code, you'll see the following error message:
+
+SyntaxError: Unexpected token &&
+
+10. TypeError: tweet.length is not a function
+
+The syntax section of the MDN page on length demonstrates that length is called without parentheses. This is because it is a string property, not a string method.
