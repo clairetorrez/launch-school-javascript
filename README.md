@@ -1,1 +1,1 @@
-Repository to store and track progress through Launch School
+Repository to store and track progress through Launch School Javascript Track.
