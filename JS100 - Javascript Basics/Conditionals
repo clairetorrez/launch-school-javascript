@@ -77,3 +77,46 @@ switch (weather) {
   default:
     console.log("Let's stay inside.");
 }
+
+7. Logical Conditions 1
+
+if (false || true) {
+  console.log('Yes!');
+} else {
+  console.log('No...');
+}
+
+The output will always be 'Yes!'.
+
+8. Logical Conditions 2
+
+if (true && false) {
+  console.log('Yes!');
+} else {
+  console.log('No...');
+}
+
+The output will always be 'No...'.
+
+9. Logical Conditions 3
+
+let sale = true;
+let admissionPrice = !sale ? 5.25 : 3.99;
+
+console.log('$' + admissionPrice);
+
+$3.99
+
+10. Are we moving?
+
+Determine what the following code snippet logs. First solve it in your head or on paper, and only then run it in your JavaScript console to check the result.
+
+let speed = 0;
+let acceleration = 24;
+let brakingForce = 19;
+
+let isMoving = brakingForce < acceleration && (speed > 0 || acceleration > 0);
+
+console.log(isMoving);
+
+The code outputs true.
