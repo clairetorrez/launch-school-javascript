@@ -47,3 +47,97 @@ function myFunction() {
 myFunction();
 
 The code logs 1.
+
+5. What's my value? (Part 5)
+
+What will the following code log to the console and why? Don't run it until you have tried to answer.
+
+function myFunction() {
+  let a = 1;
+
+  if (true) {
+    console.log(a);
+    let a = 2;
+    console.log(a);
+  }
+}
+
+myFunction();
+
+ReferenceError: Cannot access 'a' before initialization
+
+6. What's my value? (Part 6)
+
+What will the following code log to the console and why? Don't run it until you have tried to answer.
+
+let a = 5;
+let b = false;
+
+if (a > 4) {
+  let b = true;
+}
+
+console.log(b);
+
+The code logs false.
+
+7. What's my value? (Part 7)
+
+What will the following code log to the console and why? Don't run it until you have tried to answer.
+
+let a = 1;
+
+function myFunction() {
+  console.log(a);
+}
+
+myFunction();
+
+The code logs 1.
+
+8. What's my value? (Part 8)
+
+What will the following code log to the console and why? Don't run it until you have tried to answer.
+
+let a = 1;
+
+function myFunction(a) {
+  console.log(a);
+}
+
+let b = 2;
+
+myFunction(b);
+
+The code logs 2.
+
+9. What's my value? (Part 9)
+
+const a = 1;
+
+function myFunction() {
+  a = 2;
+}
+
+myFunction(a);
+
+TypeError: Assignment to constant variable.
+
+10. What's my value? (Part 10)
+
+What will the following code log to the console and why? Don't run it until you have tried to answer.
+
+const a = {
+  firstName: 'John',
+  lastName: 'Doe'
+};
+
+function myFunction() {
+  a.firstName = 'Jane';
+}
+
+myFunction();
+
+console.log(a);
+
+{ firstName: 'Jane', lastName: 'Doe' }
