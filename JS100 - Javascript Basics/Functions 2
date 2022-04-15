@@ -57,3 +57,75 @@ function calculateBMI(heightInCentimeters, weightInKilograms) {
 }
 
 5. Calculate Cat Age
+
+Implement a function catAge that takes a number of human years as input and converts them into cat years. Cat years are calculated as follows:
+
+The first human year corresponds to 15 cat years.
+The second human year corresponds to 9 cat years.
+Every subsequent human year corresponds to 4 cat years.
+
+function catAge(humanYears) {
+  switch(humanYears) {
+    case 0:
+      return 0;
+    case 1:
+      return 15;
+    case 2:
+      return 24;
+    default:
+      return 24 + (humanYears - 2) * 4;
+  }
+}
+
+6. Remove Last Char
+
+Create a function removeLastChar that takes a string as an argument, and returns the string without the last character.
+
+function removeLastChar(string) {
+  return string.substring(0, string.length - 1);
+}
+
+7. Arrow Functions (Part 1)
+
+Refactor the function below using arrow syntax. Line 9 should still log the same sentence.
+
+const template = 'I VERB NOUN.';
+
+function sentence(verb, noun) {
+  return template
+    .replace('VERB', verb)
+    .replace('NOUN', noun);
+}
+
+console.log(sentence('like', 'birds'));
+// logs: I like birds.
+
+let sentence = (verb, noun) => template
+  .replace('VERB', verb)
+  .replace('NOUN', noun);
+  
+8. Arrow Functions (Part 2)
+
+The function initGame below returns an object. Refactor it using arrow function syntax.
+
+let initGame = function () {
+  return {
+    level: 1,
+    score: 0
+  }
+};
+
+let game = initGame();
+
+console.log('Level: ' + game.level);
+console.log('Score: ' + game.score);
+
+let initGame = () => ({
+  level: 1,
+  score: 0
+});
+
+let game = initGame();
+
+console.log('Level: ' + game.level);
+console.log('Score: ' + game.score);
