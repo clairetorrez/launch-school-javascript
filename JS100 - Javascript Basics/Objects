@@ -123,3 +123,53 @@ for (let prop in obj) {
     console.log("It's true!");
   }
 }
+
+The condition of our if statement on line 11 returns false for all properties, because property names are always strings, while the body of our for loop looks for the Boolean value true.
+
+7. Car Keys
+
+Write code that stores all of the vehicle property names in an array called keys.
+
+let keys = Object.keys(vehicle);
+
+console.log(keys);
+// ['manufacturer', 'model', 'year', 'range', 'seats']
+
+8. Convert an object to a nested array
+
+Convert the person object into a nested array nestedPerson, containing the same key-value pairs.
+
+let person = {
+  title: 'Duke',
+  name: 'Nukem',
+  age: 33
+};
+
+// Expected output:
+// [['title', 'Duke'], ['name', 'Nukem'], ['age', 33]]
+
+let nestedPerson = Object.entries(person);
+
+console.log(nestedPerson);
+// [['title', 'Duke'], ['name', 'Nukem'], ['age', 33]]
+
+9. ...and vice versa
+
+Write code that does the reverse, starting from a nested array of pairs and building an object.
+
+let nestedArray = [['title', 'Duke'], ['name', 'Nukem'], ['age', 33]];
+
+// Expected output:
+// { title: 'Duke', name: 'Nukem', age: 33 }
+
+let person = Object.fromEntries(nestedArray);
+console.log(person);
+// { title: 'Duke', name: 'Nukem', age: 33 }
+
+10. Cloning a Person
+
+Write a function clone that takes an object as argument and returns a shallow copy of that argument. A shallow copy returns a new object that is a copy of the original object. However, only the object itself and any properties with primitive values are duplicated. Properties that are themselves objects are copied "by reference" -- that is, only a pointer to the object is copied.
+
+function clone(obj) {
+  return Object.assign({}, obj);
+}
