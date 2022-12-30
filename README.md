@@ -1,1 +1,1 @@
-Launch School Javascript Practice.
+Launch School JavaScript Practice.
